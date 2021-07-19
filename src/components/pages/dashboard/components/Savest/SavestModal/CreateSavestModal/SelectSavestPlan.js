@@ -3,7 +3,7 @@ import "./SelectSavestPlan.css";
 import savestfeeicon from "../../../../assets/savestfee-icon.svg";
 import savesthouseicon from "../../../../assets/savest-houseicon.svg";
 
-const SelectSavestPlan = () => {
+const SelectSavestPlan = ({ setMenu }) => {
   return (
     <div className="select-savest-body">
       <div className="select-savest-main">
@@ -29,7 +29,7 @@ const SelectSavestPlan = () => {
           <div className="flexible-savest-plan">
             <div className="fixed-savest-plan-body">
               <div className="fixed-plan-img">
-                <img src={savesthouseicon} alt="" />
+                <img src={savesthouseicon} alt="" onClick={() => setMenu(1)} />
               </div>
               <h5 className="fixed-plan-h5">Flexible Savest Plan</h5>
               <p className="fixed-plan-p">
