@@ -12,28 +12,34 @@ const CreateFlexible = ({ setMenu }) => {
           </p>
         </div>
         <div className="savest-amount-tosave">
-          <p className="savest-amount-p">How much would you like to save ? </p>
-          <input type="text" className="savest-flexible-input" />
-        </div>
-        <div className="amount-targeted">
-          <p className="savest-amount-p2 mt-5">What is your target amount?</p>
-          <input type="text" name="" id="" className="savest-flexible-input" />
-        </div>
-        <div className="checkbox-automate">
-          <p className="savest-amount-p">
-            Do you wish to automate your savings?
-          </p>
+          <p className="savest-amount-p">How often would you like to save ? </p>
           <input type="radio" name="" id="" className=" mt-3" />
           <label htmlFor="" className="savest-plan-label">
-            Yes, I will like to be debited automatically
+            Daily
           </label>
           <br />
           <input type="radio" name="" id="" className="mt-4" />
           <label htmlFor="" className="savest-plan-label">
-            No, I will like to save whenever I want
+            Once a week
+          </label>
+
+          <br />
+          <input type="radio" name="" id="" className="mt-4" />
+          <label htmlFor="" className="savest-plan-label">
+            Once a month
           </label>
         </div>
-        <button onClick={() => setMenu(2)} className="savest-button">
+        <div className="amount-targeted">
+          <p className="savest-amount-p2 mt-5">Payment date</p>
+          <input type="text" name="" id="" className="savest-flexible-input" />
+
+          <p className="savest-amount-p2 mt-5">
+            When would you like to start saving?
+          </p>
+          <input type="text" name="" id="" className="savest-flexible-input" />
+        </div>
+
+        <button onClick={() => setMenu(3)} className="savest-button">
           Next
         </button>
       </div>
