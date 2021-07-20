@@ -13,18 +13,36 @@ const CreateFlexible = ({ setMenu }) => {
         </div>
         <div className="savest-amount-tosave">
           <p className="savest-amount-p">How often would you like to save ? </p>
-          <input type="radio" name="" id="" className=" mt-3" />
+          <input
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            className=" mt-3"
+          />
           <label htmlFor="" className="savest-plan-label">
             Daily
           </label>
           <br />
-          <input type="radio" name="" id="" className="mt-4" />
+          <input
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            className=" mt-4"
+          />
           <label htmlFor="" className="savest-plan-label">
             Once a week
           </label>
 
           <br />
-          <input type="radio" name="" id="" className="mt-4" />
+          <input
+            type="radio"
+            id="html"
+            name="fav_language"
+            value="HTML"
+            className=" mt-4"
+          />
           <label htmlFor="" className="savest-plan-label">
             Once a month
           </label>

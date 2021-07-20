@@ -131,3 +131,61 @@
   color: #0768f6;
   margin-top: -1rem;
 }
+.select-cards {
+  margin-top: 3rem;
+}
+.select-cards-p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+.card-selection {
+  display: flex;
+  margin-top: 2rem;
+}
+.payment-method-img {
+  margin-left: 13rem;
+  margin-top: 2rem;
+}
+.payment-radio {
+  margin-top: 2.3rem;
+}
+
+.payment-bank {
+  margin-left: 2rem;
+}
+.payment-bank-p1 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  color: #333333;
+}
+.payment-bank-p2 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  color: #666666;
+}
+.payment-bank-p3 {
+  width: 166px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+  color: #666666;
+}
+hr {
+  width: 100%;
+  margin: auto;
+}
