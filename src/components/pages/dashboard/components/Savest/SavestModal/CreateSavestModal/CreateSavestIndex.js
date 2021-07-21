@@ -68,7 +68,7 @@ const CreateSavestIndex = ({ menu, setMenu }) => {
           <button
             className="backicon"
             onClick={() => {
-              setMenu(2);
+              setMenu(3);
             }}
           >
             <img src={backicon} alt="back icon" />
@@ -84,7 +84,7 @@ const CreateSavestIndex = ({ menu, setMenu }) => {
           <button
             className="backicon"
             onClick={() => {
-              setMenu(2);
+              setMenu(4);
             }}
           >
             <img src={backicon} alt="back icon" />

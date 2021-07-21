@@ -26,10 +26,10 @@ const SelectSavestPlan = ({ setMenu }) => {
               </p>
             </div>
           </div>
-          <div className="flexible-savest-plan">
+          <div onClick={() => setMenu(1)} className="flexible-savest-plan">
             <div className="fixed-savest-plan-body">
               <div className="fixed-plan-img">
-                <img src={savesthouseicon} alt="" onClick={() => setMenu(1)} />
+                <img src={savesthouseicon} alt="" />
               </div>
               <h5 className="fixed-plan-h5">Flexible Savest Plan</h5>
               <p className="fixed-plan-p">

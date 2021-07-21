@@ -130,6 +130,7 @@
   letter-spacing: 0.03em;
   color: #0768f6;
   margin-top: -1rem;
+  cursor: pointer;
 }
 .select-cards {
   margin-top: 3rem;

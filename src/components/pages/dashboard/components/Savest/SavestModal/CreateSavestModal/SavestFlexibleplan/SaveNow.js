@@ -21,7 +21,10 @@ const InvestNow = ({ setMenu }) => {
                 <p className="save-now-with-balance mt-3">
                   Balance: N20,000,000
                 </p>
-                <p className="save-now-change-payment">
+                <p
+                  onClick={() => setMenu(5)}
+                  className="save-now-change-payment"
+                >
                   Change this{" "}
                   <span>
                     <img
@@ -45,9 +48,7 @@ const InvestNow = ({ setMenu }) => {
             method(s) on OVest.
           </p>
         </div>
-        <button onClick={() => setMenu(5)} className="savest-button">
-          Save now
-        </button>
+        <button className="savest-button">Save now</button>
         {/* <button className="claim-property">Save N500</button> */}
       </div>
     </div>
