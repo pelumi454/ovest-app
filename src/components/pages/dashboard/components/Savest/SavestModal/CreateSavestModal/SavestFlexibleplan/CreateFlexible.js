@@ -1,5 +1,13 @@
 import React from "react";
 import "./SavestFlexible.css";
+import { Formik, Form } from "formik";
+import {
+  ButtonGroup,
+  StyledBankTransferFormButton,
+  colors,
+} from "../../../../../../../Syles/styles";
+import { BankTranferDetailsTextInput } from "../../../../../../Formik/BankDetailsInput";
+import * as Yup from "yup";
 
 const CreateFlexible = ({ setMenu }) => {
   return (
@@ -13,12 +21,55 @@ const CreateFlexible = ({ setMenu }) => {
         </div>
         <div className="savest-amount-tosave">
           <p className="savest-amount-p">How much would you like to save ? </p>
-          <input type="text" className="savest-flexible-input" />
+          <Formik
+            initialValues={{
+              amount: "",
+            }}
+            onSubmit={(values, { setSubmittimg, setFieldError }) => {
+              console.log(values);
+            }}
+            validationSchema={Yup.object({
+              amount: Yup.string().required(
+                "Amount deposited Field is required"
+              ),
+            })}
+          >
+            {({ isSubmitting }) => (
+              <Form>
+                <BankTranferDetailsTextInput
+                  name="amount"
+                  type="tel"
+                  placeholder="NGN"
+                />
+              </Form>
+            )}
+          </Formik>
         </div>
         <div className="amount-targeted">
           <p className="savest-amount-p2 mt-5">What is your target amount?</p>
-
-          <input type="text" name="" id="" className="savest-flexible-input" />
+          <Formik
+            initialValues={{
+              amount: "",
+            }}
+            onSubmit={(values, { setSubmittimg, setFieldError }) => {
+              console.log(values);
+            }}
+            validationSchema={Yup.object({
+              amount: Yup.string().required(
+                "Amount deposited Field is required"
+              ),
+            })}
+          >
+            {({ isSubmitting }) => (
+              <Form>
+                <BankTranferDetailsTextInput
+                  name="amount"
+                  type="tel"
+                  placeholder="NGN"
+                />
+              </Form>
+            )}
+          </Formik>
         </div>
         <div className="checkbox-automate">
           <p className="savest-amount-p">
@@ -50,6 +101,13 @@ const CreateFlexible = ({ setMenu }) => {
         <button onClick={() => setMenu(2)} className="savest-button">
           Next
         </button>
+
+        <div className="checkbox-main">
+          <input type="checkbox" name="" id="" className="checkbox-input" />
+          <label htmlFor="" className="earninterest-savest">
+            Earn interest on this saving plan
+          </label>
+        </div>
       </div>
     </div>
   );

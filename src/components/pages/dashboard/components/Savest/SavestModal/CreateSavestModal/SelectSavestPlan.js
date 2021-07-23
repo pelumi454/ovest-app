@@ -14,7 +14,7 @@ const SelectSavestPlan = ({ setMenu }) => {
           </p>
         </div>
         <div className="savest-plans">
-          <div className="fixed-savest-plan">
+          <div onClick={() => setMenu(7)} className="fixed-savest-plan">
             <div className="fixed-savest-plan-body">
               <div className="fixed-plan-img">
                 <img src={savestfeeicon} alt="" />
