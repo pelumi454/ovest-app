@@ -72,7 +72,11 @@ const SavestAccount = ({ setMenu }) => {
 
         <div className="savest-amount-tosave">
           <p className="savest-amount-p">Payment Date</p>
-          <input type="text" className="savest-flexible-input" />
+          <input
+            type="text"
+            className="savest-flexible-input"
+            placeholder="Monday"
+          />
         </div>
 
         <div className="savest-amount-tosave">

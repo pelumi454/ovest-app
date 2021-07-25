@@ -64,9 +64,7 @@ const HowOftenFixed = ({ setMenu }) => {
               console.log(values);
             }}
             validationSchema={Yup.object({
-              amount: Yup.string().required(
-                "Amount deposited Field is required"
-              ),
+              amount: Yup.string().required("Payment Date Field is required"),
             })}
           >
             {({ isSubmitting }) => (
@@ -74,13 +72,11 @@ const HowOftenFixed = ({ setMenu }) => {
                 <BankTranferDetailsTextInput
                   name="amount"
                   type="tel"
-                  placeholder="NGN"
+                  placeholder="Monday"
                 />
               </Form>
             )}
           </Formik>
-          {/* <input type="text" name="" id="" className="savest-flexible-input" /> */}
-
           <p className="savest-amount-p2 mt-5">
             When would you like to start saving?
           </p>
@@ -92,9 +88,7 @@ const HowOftenFixed = ({ setMenu }) => {
               console.log(values);
             }}
             validationSchema={Yup.object({
-              amount: Yup.string().required(
-                "Amount deposited Field is required"
-              ),
+              amount: Yup.string().required("Date Field is required"),
             })}
           >
             {({ isSubmitting }) => (
@@ -102,7 +96,7 @@ const HowOftenFixed = ({ setMenu }) => {
                 <BankTranferDetailsTextInput
                   name="amount"
                   type="tel"
-                  placeholder="NGN"
+                  placeholder="DD/MM/YYYY"
                 />
               </Form>
             )}

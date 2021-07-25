@@ -2,7 +2,7 @@ import React from "react";
 import { Formik, Form } from "formik";
 // import { CardFundingTextInput } from "../../../../Formik/FormLib";
 import * as Yup from "yup";
-import flutter from "../../../../../Assets/flutter.svg";
+import flutter from "../../../../../../../Assets/flutter.svg";
 import {
   // StyledContainer,
   // StyledFormArea,
@@ -18,10 +18,10 @@ import {
   // TextLink,
   // colors,
   // StyledTextInputCardFunding,
-} from "../../../../../Syles/styles.js";
-import cardlogo from "../../../../../Assets/cardlogo.svg";
-import cardcloseicon from "../../../../../Assets/cardcloseicon.svg";
-import "./card.css";
+} from "../../../../../../../Syles/styles.js";
+import cardlogo from "../../../../../../../Assets/cardlogo.svg";
+import cardcloseicon from "../../../../../../../Assets/cardcloseicon.svg";
+import "../../../../fundwallet/card/card.css";
 
 const CardAmountInput = ({ setStage, toggleModalAppearance }) => {
   return (
@@ -94,7 +94,8 @@ const CardAmountInput = ({ setStage, toggleModalAppearance }) => {
                 name="CVV"
                 type="number"
                 placeholder="CVV"
-              
+              />
+
               <ButtonGroup>
                 {!isSubmitting && (
                   <StyledBankTransferFormButton

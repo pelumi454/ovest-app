@@ -31,9 +31,7 @@ const SaveNowEditPlan = ({ setMenu }) => {
               console.log(values);
             }}
             validationSchema={Yup.object({
-              amount: Yup.string().required(
-                "Amount deposited Field is required"
-              ),
+              amount: Yup.string().required("Date Field is required"),
             })}
           >
             {({ isSubmitting }) => (
@@ -41,7 +39,7 @@ const SaveNowEditPlan = ({ setMenu }) => {
                 <BankTranferDetailsTextInput
                   name="amount"
                   type="tel"
-                  placeholder="NGN"
+                  placeholder="DD/MM/YYYY"
                 />
               </Form>
             )}
@@ -59,9 +57,7 @@ const SaveNowEditPlan = ({ setMenu }) => {
               console.log(values);
             }}
             validationSchema={Yup.object({
-              amount: Yup.string().required(
-                "Amount deposited Field is required"
-              ),
+              amount: Yup.string().required("Date Field is required"),
             })}
           >
             {({ isSubmitting }) => (
@@ -69,7 +65,7 @@ const SaveNowEditPlan = ({ setMenu }) => {
                 <BankTranferDetailsTextInput
                   name="amount"
                   type="tel"
-                  placeholder="NGN"
+                  placeholder="DD/MM/YYYY"
                 />
               </Form>
             )}

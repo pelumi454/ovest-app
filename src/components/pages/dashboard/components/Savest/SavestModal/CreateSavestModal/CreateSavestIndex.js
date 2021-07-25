@@ -6,7 +6,7 @@ import SavingsSummary from "../CreateSavestModal/SavestFlexibleplan/SavingsSumma
 import SaveNow from "../CreateSavestModal/SavestFlexibleplan/SaveNow";
 import SavePayment from "../CreateSavestModal/SavestFlexibleplan/SavePaymentMethod";
 import backicon from "../../../../../../Assets/backicon.svg";
-import SavestCardInput from "../../../fundwallet/card/CardAmountInput";
+// import CardAmountInput from "../../../fundwallet/card/CardAmountInput";
 import CreateFixed from "../CreateSavestModal/SavestFixedPlan/CreateFixed";
 import HowOftenFixed from "../CreateSavestModal/SavestFixedPlan/HowOftenFixed";
 import SavingSumFixed from "../CreateSavestModal/SavestFixedPlan/SavingSumFixed";
@@ -103,9 +103,9 @@ const CreateSavestIndex = ({ menu, setMenu }) => {
       );
       break;
 
-    case 6:
-      currentModal = <SavestCardInput setMenu={setMenu} />;
-      break;
+    // case 6:
+    //   currentModal = <CardAmountInput setMenu={setMenu} />;
+    //   break;
 
     case 7:
       currentModal = (
@@ -193,7 +193,7 @@ const CreateSavestIndex = ({ menu, setMenu }) => {
           <button
             className="backicon"
             onClick={() => {
-              setMenu(11);
+              setMenu(10);
             }}
           >
             <img src={backicon} alt="back icon" />

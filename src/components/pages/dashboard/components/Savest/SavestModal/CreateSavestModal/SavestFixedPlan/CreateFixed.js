@@ -40,12 +40,11 @@ const CreateFixed = ({ setMenu }) => {
                 <BankTranferDetailsTextInput
                   name="amount"
                   type="tel"
-                  placeholder="NGN"
+                  placeholder="Name"
                 />
               </Form>
             )}
           </Formik>
-          {/* <input type="text" className="savest-flexible-input" /> */}
         </div>
         <div className="amount-targeted">
           <p className="savest-amount-p2 mt-5">What is your target amount?</p>

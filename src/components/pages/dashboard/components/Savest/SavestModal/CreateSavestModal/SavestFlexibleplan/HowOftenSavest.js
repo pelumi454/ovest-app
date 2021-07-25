@@ -65,9 +65,7 @@ const CreateFlexible = ({ setMenu }) => {
               console.log(values);
             }}
             validationSchema={Yup.object({
-              amount: Yup.string().required(
-                "Amount deposited Field is required"
-              ),
+              amount: Yup.string().required("Payment date Field is required"),
             })}
           >
             {({ isSubmitting }) => (
@@ -75,7 +73,7 @@ const CreateFlexible = ({ setMenu }) => {
                 <BankTranferDetailsTextInput
                   name="amount"
                   type="tel"
-                  placeholder="NGN"
+                  placeholder="Monday"
                 />
               </Form>
             )}
@@ -91,9 +89,7 @@ const CreateFlexible = ({ setMenu }) => {
               console.log(values);
             }}
             validationSchema={Yup.object({
-              amount: Yup.string().required(
-                "Amount deposited Field is required"
-              ),
+              amount: Yup.string().required("Date deposited Field is required"),
             })}
           >
             {({ isSubmitting }) => (
@@ -101,7 +97,7 @@ const CreateFlexible = ({ setMenu }) => {
                 <BankTranferDetailsTextInput
                   name="amount"
                   type="tel"
-                  placeholder="NGN"
+                  placeholder="DD/MM/YYYY"
                 />
               </Form>
             )}
